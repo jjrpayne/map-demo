@@ -13,7 +13,7 @@ function createMap(data){
 }
 
 function initMap() {
-	fetch('http://jj-poi-api.herokuapp.com/poi')
+	fetch('https://jj-poi-api.herokuapp.com/poi')
 		.then(result => result.json())
 		.then(data => createMap(data));
 }
